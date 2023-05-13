@@ -322,7 +322,8 @@
 											<!-- <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button> -->
 											
 											<div class="responsive-menu slidein" id="mySidebar" tabindex="0" style="width: 270px; padding-right: 0px; outline: none; overflow: hidden;">
-											   <ul style="display:flex;flex-direction: column;">
+												<button id="menu-close-button">X</button>
+												<ul style="display:flex;flex-direction: column;">
 												   <li><a title="Home" class="" onclick="window.location.reload()">Home</a></li>
 												   <li><a title="About" class="active" href="./about_us.html">About</a></li>
 												   <li class="menu-item-has-children"><a onclick="mobileScrollHalf()" title="Services">
@@ -357,80 +358,34 @@
 											   </ul>
 										   </li>
 										   <li><a class="" title="" >Report</a></li>
+										   <li><a class="" href="my_blog" title="">Blog</a></li>
 										   <li><a class="" onclick="window.location.reload()" title="" >Ask an Expert</a></li>
 										   <li><a class="" href="./term_condition.html" title="" >Terms & Condition</a></li>
 										   <li><a class="" onclick="window.location.reload()" title="RPM">RPM</a></li>					
 									   </ul>
 								   </div>
 										  </div>
-										  
-										  <!-- Page Content -->
-										  
-					
-					
-					
-					
-									 <!-- #------------------------------------------------------------- -->
 									  </div>
-									  <!-- <span class="responsive-btn"><i class="fa fa-list"></i></span> -->
 						</div>
 					</div><!-- Responsive Header -->
-					<div class="responsive-menu">
+				<div class="responsive-menu">
+					<ul>
+						<li><a title="Home"  class="active" href="">Home</a></li>
+						<li><a title="About" class=""  >About</a></li>
+						<li class="menu-item-has-children"><a  title="Services"> Services</a>
 						<ul>
-							<li><a title="Home"  class="active" href="">Home</a></li>
-							<li><a title="About" class=""  >About</a></li>
-							<li class="menu-item-has-children"><a  title="Services"> Services</a>
-								<ul>
-									<li class="menu-item-has-children"><a href="javascript:void(0)" title="Equity">Equity</a>
-										<ul>
-											<!-- <li><a href="" title="Stock Cash">Stock Cash</a></li>
-											<li><a href="" title="Stock Option">Stock Option</a></li>
-											<li><a href="" title="Stock Future">Stock Future</a></li>
-											<li><a href="" title="Stock Cash Super HNI">Stock Cash Super HNI</a></li>	
-											<li><a href="" title="Stock Option Super HNI">Stock Option Super HNI</a></li>	
-											<li><a href="" title="Stock Future Super HNI">Stock Future Super HNI</a></li>
-											<li><a href="" title="Nifty Future">Nifty Future</a></li>	
-											<li><a href="" title="Nifty Option">Nifty Option</a></li> -->
-
-											<!-- <li><a title="Stock Cash Basic">Stock Cash Basic</a></li>
-											<li><a title="Stock Cash Premium">Stock Cash Premium</a></li>
-											<li><a title="Stock Cash TechniQ">Stock Cash TechniQ</a></li>
-
-											<li><a title="Stock Future Basic">Stock Future Basic</a></li>	
-											<li><a title="Stock Future Premium">Stock Future Premium</a></li>
-											<li><a title="Stock Future TechniQ">Stock Future TechniQ</a></li>	 -->
-											<!-- <li><a href="" title="Base Metal">Base Metal</a></li>
-											<li><a href="" title="Index Future">Energy</a></li> -->
-											<!-- <li><a title="Stock Option Basic">Stock Option Basic</a></li>					
-											<li><a title="Stock Option Premium">Stock Option Premium</a></li>
-											<li><a title="Stock Option TechniQ">Stock Option TechniQ</a></li>
-											<li><a title="Index Option Basic">Index Option Basic</a></li>
-											<li><a title="Index Option Premium">Index Option Premium</a></li>
-											<li><a title="Index Future">Index Future</a></li> -->
-
-											<!-- <li><a href="" title="Index Future">Bullions</a></li>
-											<li><a href="" title="MCX Combo">MCX Combo</a></li> -->
-										</ul>
-									</li>
-							<!-- <li class="menu-item-has-children"><a href="javascript:void(0)" title="Commodity">Commodity</a>
-								<ul>
-									<li><a href="" title="MCX Premium">MCX Premium</a></li>
-									<li><a href="" title="MCX Combo">MCX Combo</a></li>
-									
-									<li><a href="" title="Base Metal">Base Metal</a></li>
-									<li><a href="" title="Bullions">Bullions</a></li>
-									<li><a href="" title="Energy">Energy</a></li>
-								</ul>
-							</li> -->
+							<li class="menu-item-has-children"><a href="javascript:void(0)" title="Equity">Equity</a>
+							</li>
 						</ul>
-					</li>
-					<li><a title="Pricing" class="" \>Pricing</a></li>					
-					<li><a title="Payment" class="" \>Payment</a></li>
-					<li><a class="" title="" >Report</a></li>
-					<li><a class="" title="" >Ask an Expert</a></li>
-					<li><a class="" title="RPM" >RPM</a></li>					
-				</ul>
-			</div>
+						</li>
+						<li><a title="Pricing" class="" \>Pricing</a></li>					
+						<li><a title="Payment" class="" \>Payment</a></li>
+						<li><a class="" title="" >Report</a></li>
+						<li><a class="" href="my_blog" title="">Blog</a></li>
+						<li><a class="" title="" >Ask an Expert</a></li>
+						<li><a class="" title="RPM" >RPM</a></li>					
+					</ul>
+				</div>
 			<div class="clearfix"></div><div class="carousel ps_easeOutInCubic ps_indicators_ld ps_rotate_scale_o swipe_x" data-duration="2000" data-interval="5000" data-pause="hover" data-ride="carousel" id="fw_al_010">
 	<ol class="carousel-indicators">
 		<li data-slide-to=0 data-target="#fw_al_010 class=active">
@@ -469,103 +424,6 @@
 					</div>
 				</div>
 				<div class="clearfix"></div>
-				<!-- <section class="section_report">
-	<div class="container">
-		<div class="row">
-			<div class="sec-title text-center">
-				<h3>Data for the month ending: <span>Nov 2022</span> </h3>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1"> -->
-				<!-- Tab panes -->
-				<!-- <div class="tab-content">
-					<div role="tabpanel" class="tab-pane active" id="profile"> -->
-
-						<!-- <div class="table-responsive mt-1 ">
-							<!-- <table class="table table-bordered" style="z-index:1000;width: 50%;background: #ffffffc9;">
-								<thead style="background-color: #e9ecef ">
-									<tr>
-										<th>Received from</th>
-										<th>Pending at the end of last month</th>
-										<th>Received</th>
-										<th>Resolved*</th>
-										<th>Total Pending#</th>
-										<th>Pending complaints &gt; 3 months</th>
-										<th>Average Resolution time ⌃(in days)</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Directly from investor</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-									</tr>
-									<tr>
-										<td>SEBI (SCORES)</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-									</tr>
-									<tr>
-										<td>Other Sources (if any)</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-									</tr>
-									<tr>
-										<td>Grand Total </td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-										<td>0</td>
-									</tr>
-								</tbody>
-							</table>                       
-						</div> --> 
-										<!-- <table class="table table table-bordered" style="z-index:1000;width: 50%;background: #ffffffc9;">
-											<tbody>
-												<tr style="background-color: #e8edf9;">
-													<th style="font-size:14px;">At The Beginning Of The Month</th>
-													<th style="font-size:14px;">Received During The Month </th>
-													<th style="font-size:14px;">Resolved During The Month </th>
-													<th style="font-size:14px;">Pending At The End Of The Month</th>
-													<th style="font-size:14px;">Reasons For Pendency</th>
-												</tr>
-											</tbody>
-											<tbody>
-												<tr>
-													<td align="center" style="font-size: 12px;">0</td>
-													<td align="center" style="font-size: 12px;">0</td>
-													<td align="center" style="font-size: 12px;">0</td>
-													<td align="center" style="font-size: 12px;">0</td>
-													<td align="center" style="font-size: 12px;">N/A</td>
-												</tr>
-											</tbody> -->
-										<!-- </table> -->
-									<!-- </div>
-
-								</div> -->
-							<!-- </div>
-						</div> -->
-					<!-- </div>	
-				</section>	
-							<div class="clearfix"></div>
-				<section class="main-container bg-pattern-2" id="main-container">
-					container end-->
 					<div class="gap-60"></div>
 					<div class="ts-form form-boxed" id="ts-form">
 						<div class="container">
@@ -914,8 +772,11 @@
 	  document.getElementById("mySidebar").style.display = "none";
 	}
 
+	const menuButtonElement = document.getElementById('menu-close-button')
 
-  
+	menuButtonElement.addEventListener('click', function(e){   
+		document.getElementById("mySidebar").style.display = "none";
+	});
 	</script>
   
 
