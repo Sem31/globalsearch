@@ -229,7 +229,8 @@
                             <!-- <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button> -->
                             
                             <div class="responsive-menu slidein" id="mySidebar" tabindex="0" style="width: 270px; padding-right: 0px; outline: none; overflow: hidden;">
-                               <ul style="display:flex;flex-direction: column;">
+                               <button id="menu-close-button">X</button>
+                                <ul style="display:flex;flex-direction: column;">
                                    <li><a title="Services" href="marketing" class="">Home</a></li>
                                    <li><a title="About" class="active" href="about_us">About</a></li>
                                        <ul >
@@ -325,5 +326,43 @@
     
       
         </script>
+        <script>
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	}
+	
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	}
 
+	const menuButtonElement = document.getElementById('menu-close-button')
+
+	menuButtonElement.addEventListener('click', function(e){   
+		document.getElementById("mySidebar").style.display = "none";
+	});
+	</script>
+        <footer>
+            <div class="block blackish">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-md-6 col-sm-6">
+                            <div class="widget">
+                                <div class="about">
+                                    <li><h1 style="color:#fe4066;    margin-bottom: 21px;">GlobalSmartReaserchFirm</h1></li>
+                                    <p>All our services are transparent which helped us gain faith from our clients. And all our trade recommendation are based on thorough fundamental and technical analysis of the market through expert research analyst.</p>
+                                    <div class="contact">
+                                        <ul>
+                                            <li><span><i class="fa fa-phone"></i>Phone :</span> +918962502125</li>
+                                            <li><span><i class="fa fa-envelope"></i>Email:</span> info@global.com</li>
+                                            <li><span><i class="fa fa-home"></i>Address:</span> Phoenix Road, Clover Park, Viman Nagar, Pune, Maharashtra 411014 </li>
+                                            
+                                        </ul>
+                                    </div>							
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>			
+            </div>
+            </footer>
 </body>

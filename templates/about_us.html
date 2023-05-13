@@ -226,7 +226,8 @@
                             <!-- <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button> -->
                             
                             <div class="responsive-menu slidein" id="mySidebar" tabindex="0" style="width: 270px; padding-right: 0px; outline: none; overflow: hidden;">
-                               <ul style="display:flex;flex-direction: column;">
+                                <button id="menu-close-button">X</button>
+                                <ul style="display:flex;flex-direction: column;">
                                 <li><a  title="Services"  href="marketing"  class="" >Home</a> </li>
                                    <li><a title="About" class="active" href="about_us">About</a></li>
                                    <!-- <li class="menu-item-has-children"><a onclick="mobileScrollHalf()" title="Services">
@@ -340,6 +341,42 @@
                     
                 </div>
             </div>
+
+            <div class="col-md-7 pr-md-65">
+                <div class="sec-title">
+                  <h3>Our Expertise</h3>
+                  <h4>WHO WE ARE & WHAT WE DO...?</h4>
+                </div>
+                <p class="about-desc mt-5" style="text-align:justify;">We are purely a research house offering wide range of financial solutions to day traders, investors and individuals seeking for financial support while they can focus on their core competencies or business.</p>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Financial Managment and Consulting</h4>
+                </div>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Advice and Assistance Investing</h4>
+                </div>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Comprehensive Support for Your Portfolio</h4>
+                </div>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Personalized service</h4>
+                </div>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Appropriate Risk assessment</h4>
+                </div>
+                <div class="col-md-6">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Client Profiling</h4>
+                </div>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Swift real time assistance</h4>
+                </div>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Domestic & Global market updates</h4>
+                </div>
+                <div class="col-md-12">
+                <h4><span style="color:#0F6D41;"><i class="fa fa-check"></i></span> Weekly reports</h4>
+                </div>		 
+              </div>
+            </div>
         </div>
     </section>
 
@@ -369,8 +406,37 @@
           document.getElementById("mySidebar").style.display = "none";
         }
     
-    
+        const menuButtonElement = document.getElementById('menu-close-button')
+
+        menuButtonElement.addEventListener('click', function(e){   
+            document.getElementById("mySidebar").style.display = "none";
+        });
       
         </script>
+
+        <footer>
+            <div class="block blackish">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-md-6 col-sm-6">
+                            <div class="widget">
+                                <div class="about">
+                                    <li><h1 style="color:#fe4066;    margin-bottom: 21px;">GlobalSmartReaserchFirm</h1></li>
+                                    <p>All our services are transparent which helped us gain faith from our clients. And all our trade recommendation are based on thorough fundamental and technical analysis of the market through expert research analyst.</p>
+                                    <div class="contact">
+                                        <ul>
+                                            <li><span><i class="fa fa-phone"></i>Phone :</span> +918962502125</li>
+                                            <li><span><i class="fa fa-envelope"></i>Email:</span> info@global.com</li>
+                                            <li><span><i class="fa fa-home"></i>Address:</span> Phoenix Road, Clover Park, Viman Nagar, Pune, Maharashtra 411014 </li>
+                                            
+                                        </ul>
+                                    </div>							
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>			
+            </div>
+            </footer>
 
 </body>
